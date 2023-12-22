@@ -1,0 +1,23 @@
+[[project]]
+name = "xmr-btc-swap"
+desc = "Designed and built an internal API interface exposed via a JSON-RPC server."
+tags = ["Rust", "Monero", "atomic swaps", "tokio"]
+links = [
+  { name = "", icon = "github", url = "https://github.com/comit-network/xmr-btc-swap/pull/1276" },
+]
+
+[[project]]
+name = "KeepassXC"
+desc = "Added action to selectively lock a single database."
+tags = ["C++", "password manager", "Qt"]
+links = [
+  { name = "GitHub", icon = "github", url = "https://github.com/keepassxreboot/keepassxc/pull/6652" }
+]
+
+[[project]]
+name = "starship"
+desc = "Updated docker_context module to update accordingly to DOCKER_HOST and DOCKER_CONTEXT."
+tags = ["Rust", "shell", "terminal prompt"]
+links = [
+  { name = "git", icon = "", url = "https://github.com/starship/starship/pull/2782"}
+]
