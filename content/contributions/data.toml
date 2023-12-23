@@ -3,7 +3,7 @@ name = "xmr-btc-swap"
 desc = "Designed and built an internal API interface exposed via a JSON-RPC server."
 tags = ["Rust", "Monero", "atomic swaps", "tokio"]
 links = [
-  { name = "", icon = "github", url = "https://github.com/comit-network/xmr-btc-swap/pull/1276" },
+  { name = "git", icon = "", url = "https://github.com/comit-network/xmr-btc-swap/pull/1276" },
 ]
 
 [[project]]
@@ -11,7 +11,7 @@ name = "KeepassXC"
 desc = "Added action to selectively lock a single database."
 tags = ["C++", "password manager", "Qt"]
 links = [
-  { name = "GitHub", icon = "github", url = "https://github.com/keepassxreboot/keepassxc/pull/6652" }
+  { name = "git", icon = "", url = "https://github.com/keepassxreboot/keepassxc/pull/6652" }
 ]
 
 [[project]]
