@@ -1,4 +1,5 @@
 +++
+title = 'yamabiiko'
 template = 'home.html'
 page_template = 'post.html'
 

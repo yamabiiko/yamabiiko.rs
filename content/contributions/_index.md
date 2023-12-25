@@ -1,4 +1,5 @@
 +++
+title = 'Contributions'
 template = 'contributions.html'
 
 [extra]
