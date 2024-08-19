@@ -1,5 +1,5 @@
 [[project]]
-name = "lhltp"
+name = "lhtlp"
 desc = "Implemented Linearly Homomorphic Time-lock Puzzles (LHTLP) crate in Rust"
 tags = ["Rust", "cryptography", "timelock", "lhltp"]
 links = [
