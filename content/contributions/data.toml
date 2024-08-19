@@ -1,4 +1,12 @@
 [[project]]
+name = "lhltp"
+desc = "Implemented Linearly Homomorphic Time-lock Puzzles (LHTLP) crate in Rust"
+tags = ["Rust", "cryptography", "timelock", "lhltp"]
+links = [
+  { name = "git", icon = "", url = "https://github.com/yamabiiko/lhtlp" },
+]
+
+[[project]]
 name = "xmr-btc-swap"
 desc = "Designed and built an internal API interface exposed via a JSON-RPC server."
 tags = ["Rust", "Monero", "atomic swaps", "tokio"]

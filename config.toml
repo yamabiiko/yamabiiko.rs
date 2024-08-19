@@ -3,8 +3,8 @@ base_url = "yamabiko.dev"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
-feed_filename = "feed.xml"
-generate_feed = false
+#feed_filenames = ["feed.xml"]
+#generate_feed = false
 default_language = "en"
 
 title = "yamabiiko.dev"
