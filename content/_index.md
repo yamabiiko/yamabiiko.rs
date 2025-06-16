@@ -7,6 +7,6 @@ page_template = 'post.html'
 lang = 'en'
 +++
 
-Doing research and working with Rust, cryptography, system design, WebAssembly, security, decentralization and anonimity.
+Doing research and working with Rust, Zero Knowledge, PQC, system design, security, decentralized and anonymous systems, P2P.
 
 Open source contributor.

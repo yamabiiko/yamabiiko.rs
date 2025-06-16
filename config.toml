@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "yamabiko.dev"
+base_url = "yamabiko.rs"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -7,10 +7,13 @@ compile_sass = true
 #generate_feed = false
 default_language = "en"
 
-title = "yamabiiko.dev"
+title = "yamabiiko.rs"
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 theme = "serene"
+taxonomies = [
+    {name = "tags", feed = true }
+]
 
 [markdown]
 # Whether to do syntax highlighting
@@ -28,6 +31,8 @@ sections = [
     { name = "contributions", path = "/contributions", is_external = false },
     { name = "about", path = "/about", is_external = false },
 ]
+
+
 nav_separator = "::"
 nav_wrapper_left = "{"
 nav_wrapper_right = "} ;"
