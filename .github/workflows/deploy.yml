@@ -3,7 +3,7 @@ name: Build and Deploy Zola
 on:
   push:
     branches:
-      - main  # Deploy when pushing to main branch
+      - master
 
 jobs:
   build-deploy:
