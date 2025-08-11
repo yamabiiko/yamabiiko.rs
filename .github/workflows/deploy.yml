@@ -26,8 +26,8 @@ jobs:
       - name: Deploy via SFTP
         uses: appleboy/scp-action@v0.1.7
         with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
+          host:  $SSH_HOST
+          username: $SSH_USER
           key: ${{ secrets.SSH_KEY }}
           source: "public/*"
           target: "/var/www/html"  # Adjust to your hosting path
