@@ -29,6 +29,7 @@ bio = "I hear and I forget. I see and I remember. I do and I understand."
 sections = [
     { name = "blog", path = "/blog", is_external = false },
     { name = "contributions", path = "/contributions", is_external = false },
+    { name = "research", path = "/research", is_external = false },
     { name = "about", path = "/about", is_external = false },
 ]
 

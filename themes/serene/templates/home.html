@@ -69,8 +69,26 @@
     </section>
     {% if config.extra.homepage_layout == 'about' %}
       <section id="brief" class="prose">
+	<span id="brief-content">
         {{ section.content | trim | safe }}
+      <span id="brief-icons">
+        {% for link in config.extra.links -%}
+          <a href="{{ link.url }}" aria-label="{{ link.name }}" target="_blank" rel='noreferrer noopener'>
+            {% set icon_path = "static/icon/" ~ link.icon ~ ".svg" %}
+            {% set icon = load_data(path=icon_path) %}
+            {{ icon | safe }}
+          </a>
+        {% endfor %}
+        {% set moon_icon = load_data(path="static/icon/moon.svg") %}
+        {% set sun_icon = load_data(path="static/icon/sun.svg") %}
+        <button id="theme-toggle-mobile" aria-label="theme switch" data-moon-icon="{{ moon_icon }}" data-sun-icon="{{ sun_icon }}">
+          {{ moon_icon | safe }}
+        </button>
+     </span>
+	</span>
+
       </section>
+
     {% elif config.extra.homepage_layout == 'list' %}
       {% set blog_section_path = config.extra.blog_section_path | trim_start_matches(pat="/") %}
       {% set section_md_path = blog_section_path ~ "/_index.md" %}
