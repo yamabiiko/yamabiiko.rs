@@ -1,0 +1,21 @@
+[[project]]
+name = "SALSAA - Sumcheck-Aided Lattice-based Succinct Arguments and Applications"
+desc = "A state-of-the-art lattice-based fully-succinct argument framework, with an efficient norm-check protocol aided by sumchecks."
+published = "In submission"
+year = "2025"
+contributors = "Shuto Kuriyama, Russell W. F. Lai, Michał Osadnik, Lorenzo Tucci"
+tags = ["Rust","lattices", "sumchecks", "snark"]
+links = [
+  { name = "eprint", icon = "", url = "https://eprint.iacr.org/2025/2124" },
+]
+
+[[project]]
+name = "Secure cross-chain decentralized exchange"
+desc = "An overview on the state-of-the-art atomic swap and cross-chain decentralized exchange protocols, focusing on interoperability with Monero."
+published = "Aalto Science and Technology Bachelor's thesis"
+year = "2025"
+contributors = "Lorenzo Tucci"
+tags = ["blockchain", "atomic swaps", "threshold signatures", "decentralized exchange", "ringct", "monero"]
+links = [
+  { name = "aaltodoc", icon = "", url = "https://aaltodoc.aalto.fi/items/bf0d8687-df56-4385-a09f-b5f642d34d01" },
+]

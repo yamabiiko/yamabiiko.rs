@@ -590,10 +590,11 @@ body.homepage {
       display: inline;
     }
     #brief-icons {
-        margin-top: -44px;
+        margin-top: -46px;
         display: none;
         padding: 0 15px;
         float: right;
+        gap: .5em;
 
         a,
         button {

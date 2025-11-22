@@ -1,25 +1,59 @@
 function enableThemeToggle() {
-  const themeToggle = document.querySelector('#theme-toggle');
+  const toggles = document.querySelectorAll('#theme-toggle, #theme-toggle-mobile');
   const hlLink = document.querySelector('link#hl');
   const preferDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+  function updateToggleIcons(theme) {
+    toggles.forEach(btn => {
+      btn.innerHTML = theme == "dark"
+        ? btn.dataset.sunIcon
+        : btn.dataset.moonIcon;
+    });
+  }
+
   function toggleTheme(theme) {
-    if (theme == "dark") document.body.classList.add('dark'); else document.body.classList.remove('dark');
+    if (theme == "dark") document.body.classList.add('dark');
+    else document.body.classList.remove('dark');
+
     if (hlLink) hlLink.href = `/hl-${theme}.css`;
-    themeToggle.innerHTML = theme == "dark" ? themeToggle.dataset.sunIcon : themeToggle.dataset.moonIcon;
+
+    updateToggleIcons(theme);
     localStorage.setItem("theme", theme);
     toggleGiscusTheme(theme);
   }
+
   function toggleGiscusTheme(theme) {
     const iframe = document.querySelector('iframe.giscus-frame');
-    if (iframe) iframe.contentWindow.postMessage({ giscus: { setConfig: { theme: `${location.origin}/giscus_${theme}.css` } } }, 'https://giscus.app');
+    if (iframe) {
+      iframe.contentWindow.postMessage({
+        giscus: {
+          setConfig: {
+            theme: `${location.origin}/giscus_${theme}.css`
+          }
+        }
+      }, 'https://giscus.app');
+    }
   }
+
   function initGiscusTheme() {
-    toggleGiscusTheme(localStorage.getItem("theme") || (preferDark.matches ? "dark" : "light"));
+    toggleGiscusTheme(localStorage.getItem("theme") ||
+      (preferDark.matches ? "dark" : "light"));
+
     window.removeEventListener('message', initGiscusTheme);
   }
+
   window.addEventListener('message', initGiscusTheme);
-  themeToggle.addEventListener('click', () => toggleTheme(localStorage.getItem("theme") == "dark" ? "light" : "dark"));
+
+  toggles.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const current = localStorage.getItem("theme") == "dark" ? "light" : "dark";
+      toggleTheme(current);
+    });
+  });
+
   preferDark.addEventListener("change", e => toggleTheme(e.matches ? "dark" : "light"));
+
+  // Initial load
   if (!localStorage.getItem("theme") && preferDark.matches) toggleTheme("dark");
   if (localStorage.getItem("theme") == "dark") toggleTheme("dark");
 }
