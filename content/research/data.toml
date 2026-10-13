@@ -1,6 +1,6 @@
 [[project]]
 name = "RoKoko: Lattice-based Succinct Arguments, a Committed Refinement"
-desc = "a new lattice-based succinct argument system that achieves a linear-time prover alongside polylogarithmic communication and verifier complexity, while outperforming the state-of-the-art polynomial commitment scheme with a 100x faster verification time"
+desc = "A new lattice-based succinct argument system that achieves a linear-time prover alongside polylogarithmic communication and verifier complexity, outperforming the state-of-the-art with a 100x faster verification time."
 published = "Asiacrypt 2026"
 year = "2026"
 contributors = "Michael Klooss, Russell W. F. Lai, Ngoc Khanh Nguyen, Michał Osadnik, Lorenzo Tucci"

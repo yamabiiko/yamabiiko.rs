@@ -1,6 +1,6 @@
 [[project]]
 name = "rokoko"
-desc = "Contributed to the Rust implementation of Rokoko, a SNARK built from the argument system presented in RoKoko: Lattice-based Succinct Arguments, a Committed Refinement. Optimized with vectorized ring arithmetic using AVX-512 instructions."
+desc = "Contributed to the AVX-512 optimized Rust implementation of Rokoko, a SNARK presented in RoKoko: Lattice-based Succinct Argument."
 tags = ["Rust", "cryptography", "snark", "lattices", "avx512"]
 links = [
   { name = "git", icon = "", url = "https://github.com/lattice-arguments/rokoko" },
