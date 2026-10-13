@@ -1,4 +1,15 @@
 [[project]]
+name = "RoKoko: Lattice-based Succinct Arguments, a Committed Refinement"
+desc = "a new lattice-based succinct argument system that achieves a linear-time prover alongside polylogarithmic communication and verifier complexity, while outperforming the state-of-the-art polynomial commitment scheme with a 100x faster verification time"
+published = "Asiacrypt 2026"
+year = "2026"
+contributors = "Michael Klooss, Russell W. F. Lai, Ngoc Khanh Nguyen, Michał Osadnik, Lorenzo Tucci"
+tags = ["Rust","lattices", "projections", "snark"]
+links = [
+  { name = "eprint", icon = "", url = "https://eprint.iacr.org/2026/575" },
+]
+
+[[project]]
 name = "SALSAA - Sumcheck-Aided Lattice-based Succinct Arguments and Applications"
 desc = "A state-of-the-art lattice-based fully-succinct argument framework, with an efficient norm-check protocol aided by sumchecks."
 published = "In submission"

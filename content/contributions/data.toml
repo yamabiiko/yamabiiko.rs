@@ -1,4 +1,12 @@
 [[project]]
+name = "rokoko"
+desc = "Contributed to the Rust implementation of Rokoko, a SNARK built from the argument system presented in RoKoko: Lattice-based Succinct Arguments, a Committed Refinement. Optimized with vectorized ring arithmetic using AVX-512 instructions."
+tags = ["Rust", "cryptography", "snark", "lattices", "avx512"]
+links = [
+  { name = "git", icon = "", url = "https://github.com/lattice-arguments/rokoko" },
+]
+
+[[project]]
 name = "lhtlp"
 desc = "Implemented Linearly Homomorphic Time-lock Puzzles (LHTLP) crate in Rust"
 tags = ["Rust", "cryptography", "timelock", "lhltp"]
